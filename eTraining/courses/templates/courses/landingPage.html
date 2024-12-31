@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/landingPage.css' %}">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=code_blocks" />
+
+    <title>Home</title>
+</head>
+<body>
+
+    <nav>
+        <header>
+            <p>E-LEARNING</p>
+        </header>
+        <li><a href="http://">Home</a></li>
+        <li><a href="http://">Category</a></li>
+        <li><a href="http://">Courses</a></li>
+        <li><a href="http://">Blog</a></li>
+        <button type="button">Sign Up</button>
+    </nav>
+
+    <div class="bannerHero">
+        <div class="left">
+            <h1>Investing in</h1>
+            <h1>Knowledge and</h1>   
+            <h1 class="cOrange">Your Future</h1>    
+            <p>Our e-learning programs has been developed to be a vehicule</p>
+            <p>of delivering multimedia learning solutions for your buisness</p>
+            <div class="call">
+                <a href="">Contact</a>
+                <div class="statCarreer">
+                    <span class="first">
+                        <h2>50 </h2><span>+</span>
+                    </span>
+                    <p>Carreer courses</p>
+                </div>
+                <div class="statCarreer">
+                    <span class="first"><h2>1M </h2><span>+</span></span>
+                    <p>Our students</p>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <img src="{% static './assets/images/aze.PNG' %}" alt="">
+        </div>
+    </div>
+
+
+    <div class="courses">
+        <h3>Browse Top Essentials</h3>
+        <h3 class="h3-bis">Carrer Courses</h3>
+        <div class="choiceCourse">
+            <div class="indexc index-course">
+                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#FFFF"><path d="M690-240h190v80H610l80-80Zm-500 80-85-85q-23-23-23.5-57t22.5-58l440-456q23-24 56.5-24t56.5 23l199 199q23 23 23 57t-23 57L520-160H190Zm296-80 314-322-198-198-442 456 64 64h262Zm-6-240Z"/></svg>
+                <p>UI/UX</p>
+                <p>Design</p>    
+            </div>
+            
+            <div class="indexc index-course1">
+                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#FFFF"><path d="m384-336 56-57-87-87 87-87-56-57-144 144 144 144Zm192 0 144-144-144-144-56 57 87 87-87 87 56 57ZM200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Z"/></svg>
+                <p>Web</p>
+                <p>Development</p>    
+            </div>
+
+            <div class="indexc index-course2">
+                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#FFFF"><path d="M720-440v-80h160v80H720Zm48 280-128-96 48-64 128 96-48 64Zm-80-480-48-64 128-96 48 64-128 96ZM200-200v-160h-40q-33 0-56.5-23.5T80-440v-80q0-33 23.5-56.5T160-600h160l200-120v480L320-360h-40v160h-80Zm240-182v-196l-98 58H160v80h182l98 58Zm120 36v-268q27 24 43.5 58.5T620-480q0 41-16.5 75.5T560-346ZM300-480Z"/></svg>
+                <p>Digital</p>
+                <p>Marketing</p>    
+            </div>
+
+            <div class="indexc index-course3">
+                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#FFFF"><path d="M480-120 200-272v-240L40-600l440-240 440 240v320h-80v-276l-80 44v240L480-120Zm0-332 274-148-274-148-274 148 274 148Zm0 241 200-108v-151L480-360 280-470v151l200 108Zm0-241Zm0 90Zm0 0Z"/></svg>
+                <p>Pratical</p>
+                <p>Learning</p>    
+            </div>
+
+            <div class="index-course4">
+                <div class="ibrowse">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#FFFF"><path d="M760-360q-51 0-85.5-34.5T640-480q0-51 34.5-85.5T760-600q51 0 85.5 34.5T880-480q0 51-34.5 85.5T760-360Zm-400 80-56-57 103-103H80v-80h327L304-624l56-56 200 200-200 200Z"/></svg>
+                </div>
+                <p class="pibrowse">Browse All</p>
+                   
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <p>&copy; E-LEARNING 2024</p>
+        <div class="legal">
+            <p>Privacy Policy</p>
+            <p>General conditions of sale</p>
+        </div>
+    </footer>
+
+</body>
+</html>

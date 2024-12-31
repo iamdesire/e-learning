@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/css/homeStripe.css">
+    <title>Stripe payement</title>
+</head>
+<body>
+    <form action="" method="post">
+        <div class="type-paiement">
+            <div class="type-content">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1A73E8"><path d="M880-720v480q0 33-23.5 56.5T800-160H160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720Zm-720 80h640v-80H160v80Zm0 160v240h640v-240H160Zm0 240v-480 480Z"/></svg>
+                <p>Card</p>
+            </div>
+
+            <div class="type-content">
+                <img src="./static/assets/icons/bancontact.png" alt="bancontact">
+                <p>Bancontact</p>
+            </div>
+            
+            <div class="type-content">
+                <img src="./static/assets/icons/ideal-icon.png" alt="ideal-icon">
+                <p>iDEAL</p>
+            </div>
+
+            <div class="type-content three point">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5F6368"><path d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z"/></svg>
+            </div>            
+        </div>
+
+        <div class="card">
+            <div class="card-number">
+                <label for="card-number">Card Number</label>
+                <div class="input-card">
+                    <input type="number" name="card-number" id="">
+                    <img src="./static/assets/icons/visa.png" alt="" class="input-icon icon-card">
+                    <img src="./static/assets/icons/mastercard.jpg" alt="" class="input-icon icon-card">
+                    <img src="./static/assets/icons/americanexpress.png" alt="" class="input-icon icon-card">
+                    <img src="./static/assets/icons/unionpay.png" alt="" class="input-icon icon-card">
+                </div>
+            </div>
+
+            <div class="expiry-cvc">
+                <div class="expiry">
+                    <label for="expiry">Expiry</label>
+                    <input type="date" name="date-expiry" id="" >
+                </div>
+
+                <div class="cvc">
+                    <label for="cvc">Cvc</label>
+                    <input type="number" name="cvc-expiry" id="" placeholder="CVC">
+                </div>
+            </div>
+
+            <div class="country-zip">
+                <div class="country">
+                    <label for="country">Country</label>
+                    <input type="date" name="date-expiry" id="" >
+                </div>
+
+                <div class="zip">
+                    <label for="zip">Zip</label>
+                    <input type="number" name="zip" id="" placeholder="ZIP CODE">
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
