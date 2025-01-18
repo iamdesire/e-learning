@@ -1,18 +1,41 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend+Deca:wght@100..900&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Varela+Round&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend+Deca:wght@100..900&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Outfit:wght@100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Varela+Round&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend+Deca:wght@100..900&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Outfit:wght@100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Varela+Round&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Signika:wght@300..700&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    color: rgb(75, 73, 73);
+    font-family: 'Signika';
 }
-
+body{
+    padding-top: 50px;
+}
+/* form's style en CSS */
 form{
-    width: 70%;
+    width: 50vw;
     background-color: #F8FBFD;
+    min-height: 60vh;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    font-family: 'Poppins', 'Inter';
 }
 
 form .type-paiement{
     display: flex;
     flex-direction: row;
+    margin-right: 35px;
+    margin-left: 30px;
 }
+
 form .type-content{
     background-color: white;
     display: flex;
@@ -22,33 +45,102 @@ form .type-content{
     border-radius: 8px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     margin: 15px 35px 15px 10px;
+    cursor: pointer;
+}
+form .type-content:hover{
+    border: 2px solid #458af7;
 }
 svg, img, .type-content p{
     margin: 5px 0px 0px 5px;
 }
 img{
     width: 24px;
-    height: 24px;
+    height: 24px;   
+}
+.card-number{
+    margin-right: 30px;
+    margin-left: 30px;
+}
+.card label{
+    
+    margin-left: 30px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.card .card-number label{
+    margin-left: 16px;
+}
+.div-input-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 8px;
+    margin: 15px 20px 15px 15px;
     
 }
-
-input{
-    height: 40px;
-    outline: none;
-    border: 1px solid white;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    background-color: white;
-    margin-left: 25px;
-}
 .input-card{
-    height: 41px;
-    width: 290px;
-    border-radius: 5px;
-    background-color: white;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    border: 1px solid rgba(99, 99, 99, 0.2);
+    outline: none;
+    border: none;
+    height: 24px;
 }
-.icon-card{
-    width: 15px;
-    height: 15px;
+
+
+
+.free{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px 20px 15px 15px;
+}
+
+.free1{
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+}
+.free input, select{
+    height: 43px;
+    width: 235px;
+    padding: 8px;
+    margin-right: 30px;
+    margin-left: 30px;
+    border-radius: 8px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: white;
+    outline: none;
+    border: none;
+}
+
+.free2{
+    display: flex;
+    flex-direction: column;
+      
+}
+
+.threeSection{
+    margin-left: 45px;
+    margin-right: 40px;
+    margin-top: 18px;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+.threeSection p{
+    margin-top: 20px;
+}
+.threeSection button{
+    width: 42vw;
+    height: 45px;
+    margin-top: 20px;
+    background-color: #458af7;
+    color: white;
+    border:none;
+    border-radius: 5px;
+
+
 }

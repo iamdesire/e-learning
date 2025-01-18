@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend+Deca:wght@100..900&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Varela+Round&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend+Deca:wght@100..900&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Outfit:wght@100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Varela+Round&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend+Deca:wght@100..900&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Outfit:wght@100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Varela+Round&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Signika:wght@300..700&display=swap');
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "lato", 'Sans-serif';
+}
+
+body{
+
+    min-height: 100vh;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    position:relative;
+    align-items: baseline;
+    font-family: 'Outfit';
+    font-weight: 400;
+}
+nav header{
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    left: 40px;
+    top: 20px;
+    bottom: 20px;
+
+}
+
+nav header p{
+    font-size: 22px;
+    font-weight: 800;
+    font-family: 'lato';
+}
+li{
+    list-style: none;
+    margin:20px 40px 20px 0px;
+    
+}
+nav button{
+    margin:20px 40px 20px 0px;
+    
+    border-radius: 23px;
+    background-color: #DD8724;
+    border: 1px solid #DD8724;
+    outline: none;
+    width: 90px;
+    height: 40px;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* style's module div */
+
+.module{
+    width: 56vw;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    
+    margin: auto;
+    
+}
+.module .h1-title{
+    font-family: 'Signika';
+    font-size: 18px;
+    text-align: center;
+    color: #1F2944;
+    margin-bottom: 29px;
+    margin-top: 45px;
+
+}
+h1{
+    color: #111827;
+    font-size: 25px;
+    font-family: 'Inter';
+    margin: 20px 0px 25px 0px;
+    
+}
+.module p {
+    font-family: 'Poppins';
+    margin-top: 15px;
+    text-align: left;
+}
+
+.module pre{
+    background-color: #1E293B;
+    color: white;
+    border-radius: 8px;
+    margin-top: 14px;
+    padding: 10px;
+}
+
+/* style's footer*/
+footer{
+    display: flex;
+    margin-top: 75px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit';
+}
+
+footer .legal{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.legal p{
+    margin-left: 55px;
+    margin-bottom: 20px;
+    color: rgb(44, 42, 42);
+}

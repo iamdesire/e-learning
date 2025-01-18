@@ -1,0 +1,135 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend+Deca:wght@100..900&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Varela+Round&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend+Deca:wght@100..900&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Outfit:wght@100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Varela+Round&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend+Deca:wght@100..900&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Outfit:wght@100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Varela+Round&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "lato", 'Sans-serif';
+}
+
+body{
+
+    min-height: 100vh;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    position:relative;
+    align-items: baseline;
+    font-family: 'Outfit';
+    font-weight: 400;
+}
+nav header{
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    left: 40px;
+    top: 20px;
+    bottom: 20px;
+
+}
+
+nav header p{
+    font-size: 22px;
+    font-weight: 800;
+    font-family: 'lato';
+}
+li{
+    list-style: none;
+    margin:20px 40px 20px 0px;
+    
+}
+nav button{
+    margin:20px 40px 20px 0px;
+    
+    border-radius: 23px;
+    background-color: #DD8724;
+    border: 1px solid #DD8724;
+    outline: none;
+    width: 90px;
+    height: 40px;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* style's content div */
+
+.content{
+    background-color:#F9FAFB;
+    padding: 25px;
+    
+}
+
+.content .module{
+    background-color: white;
+    width: 85%;
+    height: 40vh;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    margin: 25px 7% 45px 7%;
+    font-family: 'Roboto';
+}
+
+.content .module h1{
+    margin: 30px 25px 10px 25px;
+    font-family: 'Signika';
+    padding-bottom: 30px;
+    padding-top: 20px;
+    border-bottom: 1px solid #737577;
+}
+
+.content .module p{
+    margin: 20px 25px 10px 25px;
+    font-family: 'poppins';
+    padding-bottom: 10px;
+    color: #595a5b;
+}
+p::first-letter, h1::first-letter{
+    text-transform: uppercase;
+}
+
+
+.content .module .p-a{
+    margin: 20px 25px 10px 25px;
+    color:rgb(238, 233, 233);
+    font-family: 'poppins';
+    background-color: #DD8724;
+    width: 90px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* style's footer*/
+footer{
+    display: flex;
+    margin-top: 75px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit';
+}
+
+footer .legal{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.legal p{
+    margin-left: 55px;
+    margin-bottom: 20px;
+    color: rgb(44, 42, 42);
+}

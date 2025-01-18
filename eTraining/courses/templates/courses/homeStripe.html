@@ -25,7 +25,7 @@
                 <p>iDEAL</p>
             </div>
 
-            <div class="type-content three point">
+            <div class="type-content threepoint">
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5F6368"><path d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z"/></svg>
             </div>            
         </div>
@@ -33,38 +33,54 @@
         <div class="card">
             <div class="card-number">
                 <label for="card-number">Card Number</label>
-                <div class="input-card">
-                    <input type="number" name="card-number" id="">
-                    <img src="./static/assets/icons/visa.png" alt="" class="input-icon icon-card">
-                    <img src="./static/assets/icons/mastercard.jpg" alt="" class="input-icon icon-card">
-                    <img src="./static/assets/icons/americanexpress.png" alt="" class="input-icon icon-card">
-                    <img src="./static/assets/icons/unionpay.png" alt="" class="input-icon icon-card">
+
+                <div class="div-input-card">
+                    <input type="text" name="input-card" class="input-card" placeholder="1234-43526-45">
+                    <div class="div-icon-card">
+                        <img src="./static/assets/icons/visa.png" alt="" class="icon-card">
+                        <img src="./static/assets/icons/mastercard.jpg" alt="" class="icon-card">
+                        <img src="./static/assets/icons/americanexpress.png" alt="" class="icon-card">
+                        <img src="./static/assets/icons/unionpay.png" alt="" class="icon-card">
+                    </div>
                 </div>
             </div>
 
-            <div class="expiry-cvc">
-                <div class="expiry">
+            <div class="expiry-cvc free">
+                <div class="expiry free1">
                     <label for="expiry">Expiry</label>
-                    <input type="date" name="date-expiry" id="" >
+                    <input type="date" name="" id="">
                 </div>
 
-                <div class="cvc">
-                    <label for="cvc">Cvc</label>
+                <div class="cvc free2">
+                    <label for="cvc">CVC</label>
                     <input type="number" name="cvc-expiry" id="" placeholder="CVC">
                 </div>
             </div>
 
-            <div class="country-zip">
-                <div class="country">
-                    <label for="country">Country</label>
-                    <input type="date" name="date-expiry" id="" >
+            <div class="country-zip free">
+                <div class="country free1">
+                    <label for="zip-code">Country</label>
+                    <p class="p-select">
+                        <select name="zip-code" id="zip">
+                            <option value="france">France</option>
+                        </select>
+                    </p>
                 </div>
 
-                <div class="zip">
-                    <label for="zip">Zip</label>
-                    <input type="number" name="zip" id="" placeholder="ZIP CODE">
+                <div class="zip free2">
+                    <label for="zip-code">ZIP</label>
+                    <p class="p-select">
+                        <select name="zip-code" id="zip">
+                            <option value="france">France</option>
+                        </select>
+                    </p>
                 </div>
             </div>
+        </div>
+        <div class="threeSection">
+            <p>By providing card, you allow Techtolia ta charge your card for future payements in accordance with their terms.</p>
+
+            <button type="submit">Pay Now</button>
         </div>
     </form>
 </body>

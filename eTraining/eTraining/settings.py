@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'courses',
+    'ckeditor',
+    'ckeditor_uploader',
 
     #allauth configurations
     'allauth',
@@ -48,6 +50,9 @@ INSTALLED_APPS = [
     'allauth.socialaccount.providers.apple',
     'allauth.socialaccount.providers.google',
 ]
+
+#ckeditor 
+CKEDITOR_UPLOAD_PATH = "static/"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -78,6 +83,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 ACCOUNT_AUTHENTICATION_METHOD = 'email'
 ACCOUNT_EMAIL_REQUIRED = True
+
+
 
 ROOT_URLCONF = 'eTraining.urls'
 

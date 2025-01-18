@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/basicIntroduction.css' %}">
+    <title>Basics of python | Introduction </title>
+</head>
+<body>
+    <nav>
+        <header>
+            <p>E-LEARNING</p>
+        </header>
+        <li><a href="http://">Home</a></li>
+        <li><a href="http://">Category</a></li>
+        <li><a href="http://">Courses</a></li>
+        <li><a href="http://">Blog</a></li>
+        <button type="button">Sign Up</button>
+    </nav>
+
+
+    {% for data in data %}
+    <div class="module">
+        <h1 class='h1-title'>{{ data.title }}</h1>
+        {{ data.content|safe }} 
+        <a href="" class="p-a">view course</a> 
+    </div>
+    {% endfor %}
+
+    <footer>
+        <p>&copy; E-LEARNING 2024</p>
+        <div class="legal">
+            <p>Privacy Policy</p>
+            <p>General conditions of sale</p>
+        </div>
+    </footer>
+</body>
+</html>

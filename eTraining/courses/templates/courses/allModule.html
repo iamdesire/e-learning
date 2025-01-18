@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning| All module of courses</title>
+    <link rel="stylesheet" href="{% static 'css/allCourse.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=code_blocks" />
+
+</head>
+<body>
+
+    <nav>
+        <header>
+            <p>E-LEARNING</p>
+        </header>
+        <li><a href="http://">Home</a></li>
+        <li><a href="http://">Category</a></li>
+        <li><a href="http://">Courses</a></li>
+        <li><a href="http://">Blog</a></li>
+        <button type="button">Sign Up</button>
+    </nav>
+
+    <div class="content">
+     
+        {% for data in data %}
+        <div class="module">
+            <h1>{{ data.module_name }}</h1>
+            <p>{{ data.description }}</p> 
+            <a href="" class="p-a">view course</a> 
+        </div>
+        {% endfor %}
+    </div>
+
+    
+    <footer>
+        <p>&copy; E-LEARNING 2024</p>
+        <div class="legal">
+            <p>Privacy Policy</p>
+            <p>General conditions of sale</p>
+        </div>
+    </footer>
+</body>
+</html>
